@@ -7,6 +7,8 @@ TagManager:
   - Puzzle
   - Starter
   - Part
+  - Name
+  - Description
   layers:
   - Default
   - TransparentFX
@@ -52,6 +54,7 @@ TagManager:
     locked: 0
   - name: Objects
     uniqueID: 3936841923
+    locked: 0
   - name: Pieces
     uniqueID: 3857567165
     locked: 0
