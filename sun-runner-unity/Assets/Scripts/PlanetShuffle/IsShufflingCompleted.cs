@@ -6,7 +6,6 @@ using UnityEngine.SceneManagement;
 
 public class IsShufflingCompleted : MonoBehaviour
 {
-    public bool IsPuzzleCompleted = false;
     private List<PlacePlanet> places;
 
     void Start()
