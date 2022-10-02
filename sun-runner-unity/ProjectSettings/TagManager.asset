@@ -3,7 +3,13 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Puzzle
+  - Starter
+  - Part
+  - Name
+  - Description
+  - PlaceForShuffling
   layers:
   - Default
   - TransparentFX
@@ -38,6 +44,18 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Background
+    uniqueID: 2737926883
+    locked: 0
+  - name: Finish
+    uniqueID: 2269319249
+    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Objects
+    uniqueID: 3936841923
+    locked: 0
+  - name: Pieces
+    uniqueID: 3857567165
     locked: 0
