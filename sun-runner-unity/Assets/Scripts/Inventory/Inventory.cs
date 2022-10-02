@@ -50,6 +50,7 @@ public class Inventory : MonoBehaviour
                 itemImage.color = new Color(255, 255, 255, 0);
                 itemImage.sprite = null;
                 slots[i].GetComponent<Image>().sprite = inactiveSlotSprite;
+                ActiveSlot = null;
             }
         }
     }
