@@ -23,7 +23,17 @@ public class PartScript : MonoBehaviour
 
     void Update()
     {
+        if (Input.GetMouseButtonDown(0))
+        {
+            RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero);
 
+            if (hit.transform.CompareTag("Part") && !hit.transform.GetComponent<PartScript>().IsSelected)
+            {
+                var SelectedPiece = hit.transform.gameObject;
+                SelectedPiece.GetComponent<PartScript>().IsSelected = true;
+                SelectedPiece.GetComponent<PartScript>().SelectPart();
+            }
+        }
     }
 
     public void SelectPart()
