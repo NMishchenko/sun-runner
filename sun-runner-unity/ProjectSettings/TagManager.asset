@@ -9,6 +9,7 @@ TagManager:
   - Part
   - Name
   - Description
+  - PlaceForShuffling
   layers:
   - Default
   - TransparentFX
