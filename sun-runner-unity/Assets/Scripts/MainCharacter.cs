@@ -15,7 +15,7 @@ public class MainCharacter : MonoBehaviour
     [SerializeField]
     private Animator animator;
     [SerializeField]
-    private TextMeshProUGUI textMeshPro;
+    private ParticleSystem charParticleSystem;
 
     private static SceneName currentSceneName;
     
@@ -35,11 +35,17 @@ public class MainCharacter : MonoBehaviour
         var rotationAngle = x >= 0 ? 90 : -90;
 
         animator.enabled = false;
+        GetComponent<ParticleSystem>().Stop();
+
+        if (movement != Vector2.zero)
+        {
+            animator.enabled = true;
+            GetComponent<ParticleSystem>().Play();
+        }
 
         if (movement.x != 0)
         {
             transform.rotation = Quaternion.Euler(new Vector3(0, 0, rotationAngle));
-            animator.enabled = true;
         }
 
         if (movement.magnitude > 1)
@@ -68,9 +74,7 @@ public class MainCharacter : MonoBehaviour
 
     private IEnumerator Win()
     {
-        textMeshPro.enabled = true;
-        yield return new WaitForSeconds(1);
-        textMeshPro.enabled = false;
+        yield return new WaitForSeconds(0.5f);
 
         currentSceneName = (SceneName)Mathf.Clamp((int)++currentSceneName, 0, Enum.GetNames(typeof(SceneName)).Length - 1);
 
