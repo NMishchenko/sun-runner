@@ -17,7 +17,7 @@ public class IsShufflingCompleted : MonoBehaviour
     {
         if (!places.Exists(p => !p.IsCorrect))
         {
-            SceneManager.LoadScene("ParkerDescription");
+            SceneManager.LoadScene("Puzzle");
         }
     }
 }

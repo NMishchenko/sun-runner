@@ -30,6 +30,6 @@ EditorBuildSettings:
     path: Assets/Scenes/ParkerDescription.unity
     guid: 8f0c3828c8e906f4d99841621111c78d
   - enabled: 1
-    path: Assets/Scenes/FirstLocation/MainRoom.unity
-    guid: e1841e29839d19847b21ba513f6a9629
+    path: Assets/Scenes/SecondLocation/MainRoom2.unity
+    guid: 919099553fc0667479fc717073cc6cee
   m_configObjects: {}
