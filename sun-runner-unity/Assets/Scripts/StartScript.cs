@@ -8,6 +8,6 @@ public class StartScript : MonoBehaviour, IPointerDownHandler
 {
     public void OnPointerDown(PointerEventData eventData)
     {
-        SceneManager.LoadScene("MainRoom");
+        SceneManager.LoadScene("StoryOne");
     }
 }

@@ -86,6 +86,6 @@ public class MainCharacter : MonoBehaviour
         a = 0,
         b,
         c,
-        MainRoom2
+        StoryTwo
     }
 }

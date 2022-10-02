@@ -17,7 +17,7 @@ public class Exit : MonoBehaviour
     {
         if (!parts.Exists(p => !p.GetComponent<PartScript>().IsSelected))
         {
-            SceneManager.LoadScene("Credits");
+            SceneManager.LoadScene("StoryThree");
         }
     }
 }
