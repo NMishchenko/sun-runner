@@ -85,7 +85,7 @@ public class MainCharacter : MonoBehaviour
     {
         a = 0,
         b,
-        c
-        // TODO: replace scene
+        c,
+        MainRoom2
     }
 }

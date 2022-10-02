@@ -231,7 +231,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Name: Solar panels
-  Description: 123123123123123
+  Description: They are used to power the satellite.
   IsSelected: 0
 --- !u!61 &83841119
 BoxCollider2D:
@@ -559,7 +559,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Name: Cooling system
-  Description: 123123123123123
+  Description: It serves to cool the solar panels, a cooling system consists of a
+    heated tank, two radiators, aluminum tubes to increase the cooling surface and
+    pumps to circulate the coolant. The system will keep the solar panels and appliances
+    cool and working during the scorching sun.
   IsSelected: 0
 --- !u!61 &603556874
 BoxCollider2D:
@@ -1143,7 +1146,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Name: Thermal shield
-  Description: 123123123123123
+  Description: "Helps to protect the device from the intense light radiation of the
+    Sun.\r\nTo protect the body, a protective heat shield was built using carbon
+    composite foam sandwiched between two carbon plates. \r\nThis lightweight insulation
+    is coated with white ceramic paint to reflect as much light as possible. It withstands
+    temperatures up to 1650 degrees."
   IsSelected: 0
 --- !u!61 &1469806247
 BoxCollider2D:
@@ -1270,7 +1277,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Name: Antenna
-  Description: 123123123123123
+  Description: Provides communication between the satellite and the Earth.
   IsSelected: 0
 --- !u!61 &1724324762
 BoxCollider2D:
@@ -1397,7 +1404,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Name: Ion sensor
-  Description: 123123123123123
+  Description: 'Protrudes above heat shield.
+
+    This is a sensor designed to measure
+    the fluxes of ions and electrons and the angles of the solar wind flow. the bowl
+    is made of metal alloys capable of withstanding temperatures over 3000 C.'
   IsSelected: 0
 --- !u!61 &1795754234
 BoxCollider2D:
