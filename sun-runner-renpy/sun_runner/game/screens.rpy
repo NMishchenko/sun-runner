@@ -81,6 +81,38 @@ style frame:
 ## In-game screens
 ################################################################################
 
+screen glossary(target): # deleted styling elements but feel free to add them back
+    zorder 250
+    button background None action Hide("glossary")
+    vbox:
+        xpos 25
+        ypos 25
+        frame:
+            xmaximum 1500
+            has vbox
+            label target
+            text glossary_dict[target]
+
+screen dictionary: 
+    tag menu
+
+    ## This use statement includes the game_menu screen inside this one. The
+    ## vbox child is then included inside the viewport inside the game_menu
+    ## screen.
+    use game_menu(_("Dictionary"), scroll="viewport"):
+
+        style_prefix "dictionary"
+
+        vbox:
+            spacing 23
+
+            for item in glossary_dict:
+
+                hbox:
+                    label item
+                    text glossary_dict[item]
+
+
 
 ## Say screen ##################################################################
 ##
@@ -306,6 +338,8 @@ screen navigation():
             textbutton _("Save") action ShowMenu("save")
 
         textbutton _("Load") action ShowMenu("load")
+
+        textbutton _("Dictionary") action ShowMenu("dictionary")
 
         textbutton _("Preferences") action ShowMenu("preferences")
 
