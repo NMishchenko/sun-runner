@@ -6,7 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 0
-    path: 
+    path:
     guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/MainMenu.unity
@@ -29,4 +29,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ParkerDescription.unity
     guid: 8f0c3828c8e906f4d99841621111c78d
+  - enabled: 1
+    path: Assets/Scenes/FirstLocation/MainRoom.unity
+    guid: e1841e29839d19847b21ba513f6a9629
   m_configObjects: {}
