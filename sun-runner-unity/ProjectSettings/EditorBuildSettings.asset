@@ -6,7 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 0
-    path: Assets/Scenes/SampleScene.unity
+    path: 
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
     path: Assets/Scenes/a.unity
@@ -17,9 +17,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/b.unity
     guid: 35e01dd2ef06ac949af8d985929d7292
-    path: Assets/Scenes/Puzzle.unity
-    guid: 72c8e1cfb88447440ade63f050d101f3
   - enabled: 1
     path: Assets/Scenes/ParkerDescription.unity
     guid: 8f0c3828c8e906f4d99841621111c78d
+  - enabled: 1
+    path: Assets/Scenes/FirstLocation/MainRoom.unity
+    guid: e1841e29839d19847b21ba513f6a9629
   m_configObjects: {}
