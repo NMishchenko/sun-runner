@@ -11,21 +11,6 @@ public class PlacePlanet : MonoBehaviour
     [SerializeField]
     private Inventory inventory;
     public GameObject currentItem;
-    public bool IsPuzzleCompleted = false;
-    private List<GameObject> places;
-
-    void Start()
-    {
-        places = GameObject.FindGameObjectsWithTag("PlaceForShuffling").ToList();
-    }
-
-    void Update()
-    {
-        if (!places.Exists(p => !p.GetComponent<PlacePlanet>().IsCorrect))
-        {
-            SceneManager.LoadScene("ParkerDescription");
-        }
-    }
 
     public void SelectItem(string requiredItemName)
     {
